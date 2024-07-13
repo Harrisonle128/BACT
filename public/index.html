@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Tutoring in the California Bay Area | BayArea COVID-Tutoring</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/9cbf0b77ec.js" crossorigin="anonymous"></script>
+    <link rel = "shortcut icon" type = "img/png" href = "./assets/img/logo.PNG">
+    <link rel="stylesheet" href="./assets/Style/main.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <a href="./index.html"><img src="./assets/img/logo.PNG" alt="BCT Logo" width="38" height="37" class="vertical-center"></a>
+            <a href="./index.html" style="margin-left: 50px"> BayAreaCOVID-Tutoring</a>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <a href="./index.html" id="active">Home</a>
+                <a href="./01_about/index.html">About</a>
+                <a href="./02_subjects/index.html">Subjects</a>
+                <a href="./../03_team/execs.html">Leadership</a>
+                
+                <a href="./04_volunteer/index.html">Volunteer</a>
+
+                <div class="dropdown">
+    
+                
+                <a href="./05_signup/index.html" id="sign-up">Sign Up</a>
+            </ul>
+        </div>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </div>
+
+    <div class="home-content">
+        <div class="h-top">
+            <div class="mega-logo">
+                <div class="ml1"></div>
+                <div class="ml2"></div>
+                <div class="ml3"></div>
+                <div class="h-top-title">Free Tutoring: <br> For Students, By Students <br> <span style="font-size:30px"><a></a></div>
+            </div>
+            <a class="h-sign-up" href="05_signup/index.html">Sign up</a>
+        </div>
+        <div class="m-s-info">
+            <div class="mission"> 
+                <div class="mission-img"></div>
+                <div class="mission-p">
+                    <p><strong>Our mission</strong> is to provide free, quality and accessible online tutoring to all elementary and middle school students regardless of their economic and immigration status, race, sex, etc. in the California Bay area.</p>
+                    <a href="01_about/index.html" class="abt-btn">Learn More</a>
+                </div>
+            </div>
+            <div class="subjs">
+                <div class="subjs-img"></div>
+                <div class="subjs-p">
+                    <h2>Our Subjects</h2>
+                    <p>We offer topics including Mathematics, Science, English/Language Arts, History/Social Studies and various World Languages </p>
+                    <a href="02_subjects/index.html" class="subj-btn">Learn More</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="testimonials">
+            <div class="tm-1">
+                <h3>"It’s great to have another resource to read and explain things. My daughter loves it!"</h2>
+                <p>–A current tutee parent</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+        <div class="team-container">
+            <div class="team-p">
+                <h2>Passionate Tutors + Hardworking Leaders <br> = <br> Attentive, Interested Students</h2>
+            </div>
+            <div class="tut-info">
+                <h3>Our dedicated tutors work hard to provide the best possible tutoring for their students</h3>
+                <a href="05_signup/index.html" class="meet-tut">Sign up</a>
+            </div>
+            <div class="team-info">
+                <h3>Our motivated team strives every day to improve our initiative in any way possible</h3>
+                <a href="03_team/execs.html" class="meet-team">Meet our team</a>
+            </div>
+        </div>
+
+
+        </div>
+
+        <form class="contact-form" action="" method="post">
+            <div class="contact-us">Contact Us</div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="f-name">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="f-email">
+            <label for="message">Your message</label>
+            <textarea name="message" id="f-text" rows="20" cols="20"></textarea>
+            <input type="submit" value="Send" id="f-send">
+        </form>
+
+    </div>ß
+    <div class="footer">
+        <div class="copyright">Copyright &copy; 2020 Bay Area COVID-Tutoring</div>
+        <div class="f-divider"></div>
+        <div class="socials">
+            <a href="mailto:bayareacovidtutoring@gmail.com"><i class="fab fa-google" id="gmail"></i></a>
+            <a href="https://www.instagram.com/bayareacovidtutoring/" id="insta"><i class="fab fa-instagram"></i></a>
+            <a href="facebook.com"><i class="fab fa-facebook-square" id="facebook"></i></a>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/ScrollTrigger.min.js"></script>
+    
+    <script>
+        gsap.from('.nav', {
+            duration: .5, 
+            opacity: 0, 
+            x: 1000})
+
+        gsap.from('.h-top', {
+            duration: .5, 
+            opacity: 0, 
+            y: -1000})
+        
+        gsap.from('.ml1', {
+            duration: 1, 
+            opacity: 0, 
+            y:-75} )  
+        
+        gsap.from('.ml2', {
+            duration: 1, 
+            delay: .2, 
+            opacity: 0, 
+            y:-75} )  
+        
+        gsap.from('.ml3', {
+            duration: 1, 
+            delay: .4, 
+            opacity: 0, 
+            y:-75} )  
+        
+        gsap.from('.h-top-title', {
+            duration: 1, 
+            opacity: 0, 
+            y: 75} )  
+        
+        gsap.from('.h-sign-up', {
+            duration: 1, 
+            delay: .6, 
+            opacity: 0} )  
+
+        gsap.from(".m-s-info", {
+            scrollTrigger: '.m-s-info', 
+            duration: 1, 
+            opacity: 0, 
+            x: -1000} )  
+        
+        gsap.from('.mission-img', {
+            scrollTrigger: '.mission-img',
+            duration: 1, 
+            delay: .25, 
+            opacity: 0, 
+            scale: 0
+        } )  
+        
+        gsap.from('.mission-p', {
+            scrollTrigger: '.mission-p',
+            duration: 1, 
+            delay: .5, 
+            opacity: 0, 
+            scale: 0
+        } ) 
+
+        gsap.from(".subjs-p", {
+            scrollTrigger: ".subjs-p",
+            duration: 1, 
+            opacity: 0, 
+            scale: 0
+        }) 
+
+        gsap.from(".subjs-img", {
+            scrollTrigger: ".subjs-img",
+            duration: 1, 
+            delay: .5,
+            opacity: 0, 
+            scale: 0
+        }) 
+
+        gsap.from(".tm-1", {
+            scrollTrigger: '.tm-1',
+            duration: 1,
+            x: 1000,
+            opacity: 0
+        }) 
+
+        gsap.from(".team-p", {
+            scrollTrigger: '.team-p',
+            duration: 1,
+            x: -100,
+            y: -100,
+            scale: 0,
+            opacity: 0
+        })   
+        
+        gsap.from(".tut-info", {
+            scrollTrigger: '.tut-info',
+            duration: 1,
+            delay: .5,
+            x: 100,
+            y: 100,
+            scale: 0,
+            opacity: 0
+        })   
+
+        gsap.from(".team-info", {
+            scrollTrigger: '.team-info',
+            duration: 1,
+            delay: .5,
+            x: 100,
+            y: 100,
+            scale: 0,
+            opacity: 0
+        })
+
+        gsap.from(".dono-container", {
+            scrollTrigger: '.dono-container',
+            duration: 1,
+            scaleX: 0,
+            opacity: 0
+        }) 
+        gsap.from(".ilc-container", {
+            scrollTrigger: '.ilc-container',
+            duration: 1,
+            delay: 0,
+            x:100,
+            y:100,
+            scale: 0,
+            opacity: 0
+        })
+
+        gsap.from(".ilc-p", {
+            scrollTrigger: '.ilc-p',
+            duration: 1,
+            delay: .2,
+            scale: 0,
+            opacity: 0
+        }) 
+        
+        gsap.from(".ilc-img", {
+            scrollTrigger: '.ilc-img',
+            duration: 1,
+            delay: .2,
+            scale: 0,
+            opacity: 0
+        })       
+    
+    </script>
+    <script src="./assets/Scripts/main.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyApszWKXx48CkwuE7mtoFpLJdJB7HvZeg0",
+          authDomain: "bayarea-covid-tutoring.firebaseapp.com",
+          projectId: "bayarea-covid-tutoring",
+          storageBucket: "bayarea-covid-tutoring.appspot.com",
+          messagingSenderId: "562902099881",
+          appId: "1:562902099881:web:73f300fe90b105f12586b8"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+      </script>
+</body>
+</html>

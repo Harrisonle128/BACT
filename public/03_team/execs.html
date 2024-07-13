@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team | Bay Area COVID-Tutoring</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">  
+    <script src="https://kit.fontawesome.com/9cbf0b77ec.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./../assets/Style/main.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <a href="./../index.html"><img src="./../assets/img/logo.PNG" alt="BCT Logo" width="38" height="37" class="vertical-center"></a>
+            <a href="./../index.html" style="margin-left: 50px"> BayAreaCOVID-Tutoring</a>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <a href="./../index.html">Home</a>
+                <a href="./../01_about/index.html">About</a>
+                <a href="./../02_subjects/index.html">Subjects</a>
+                <a href="./../03_team/execs.html" id="active">Leadership</a>
+                <a href="./../04_volunteer/index.html">Volunteer</a>
+                <a href="./../05_signup/index.html" id="sign-up">Sign Up</a>
+                
+            </ul>
+            
+        </div>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </div>
+
+    <div class="lead-content-wrapper">
+            <div class="team-content-wrapper">
+            <div class="sen-mg">
+                <h1 id = "sen-mg-title">BACT Leadership</h1>
+                <li class="BACTpeople">
+                    <div class="BACTperson">
+                        <div class="headshot"></div>
+                        <div id = "name">Emma Tung</div>
+                        <div id = "position">Co-Director</div>
+                        <div class = "BACTbio-toggle">Bio</div>
+                        <p class = "BACTbio">Emma Tung is a high school junior at Milton Academy in Massachusetts. She is co-founder of Bay Area Covid Tutoring and helps manage daily operations for the organization. Living in Silicon Valley, Emma understood the importance of technology, especially during the pandemic. After working with RRRcomputer, an organization that refurbishes used computers and donates them to public schools, Emma wanted to find a way to provide some aid to students online when going to school in person is difficult. Outside of school, Emma enjoys Model UN conferences, playing tennis and skiing, and being the layout editor to Milton’s primary newsletter. Emma hopes that BACT will make an amazing impact on all tutors and tutees just as volunteering in Boston has done for her.</p>
+                    </div>
+                    <div class="BACTperson">
+                        <div class="headshot"></div>
+                        <div id = "name">Harrison Le</div>
+                        <div id = "position">Co-Director</div>
+                        <div class = "BACTbio-toggle">Bio</div>
+                        <p class = "BACTbio">Harrison Le is a high school junior attending Summit Shasta High School in Daly City, California. During the Fall of 2020, he studied at the School for Ethics and Global Leadership in Washington D.C, a semester-long residential program with a unique curriculum emphasizing ethical thinking skills, leadership development, and international affairs. As a Co-Founder at Bay-area  COVID-tutoring (BACT), Harrison heads day-to-day operations along with his partner, Emma Tung. These operations consist of the development of ideas, objectives, special projects while overseeing the BACT leadership team. Due to the increase in economic and educational inequalities caused by this pandemic, Harrison wanted to contribute to his community. Inspired by the stories of his peers and family, his goal is to provide a meaningful educational experience while assisting promising students to become independent, confident, and passionate thinkers. Harrison hopes to make a positive impact and provide an education every student should have access to regardless of their socioeconomic status or background. </p>
+                    </div>
+                    <div class="BACTperson">
+                        <div class="headshot"></div>
+                        <div id = "name">Katie Sinclair</div>
+                        <div id = "position">Head of Marketing</div>
+                        <div class = "BACTbio-toggle">Bio</div>
+                        <p class = "BACTbio">Katie Sinclair is a high school junior at Sacred Heart Preparatory in Atherton California, leading outreach for Bay Area COVID Tutoring. Katie has training in communications and leadership roles in school, through student council, newspaper, and ambassador roles, as well as educational justice through her summers working with the Peninsula Bridge Program. Having lived in Silicon Valley all her life and attending schools in multiple counties across the Bay, she knows the partner schools, community, and people well. Katie is an avid tennis player, runner, and horseback rider. She looks forward to making a difference in her area by giving students an opportunity for educational development, and hopes that other high school students will find the same joy through partnering with BACT.</p>
+                    </div>
+                </li>
+             </div>
+        
+
+            <script>
+                var BACTbioToggles = document.getElementsByClassName('BACTbio-toggle');
+                var BACTcards = document.getElementsByClassName('BACTperson');
+                var BACTbios = document.getElementsByClassName('BACTbio');
+
+                //HARDCODED FOR NOW
+                BACTbioToggles[0].addEventListener('click', () => {
+                        BACTbios[0].classList.toggle("bio-open");
+                        BACTcards[0].classList.toggle("bio-open");
+                    });
+
+                BACTbioToggles[1].addEventListener('click', () => {
+                        BACTbios[1].classList.toggle("bio-open");
+                        BACTcards[1].classList.toggle("bio-open");
+                    });
+
+                BACTbioToggles[2].addEventListener('click', () => {
+                        BACTbios[2].classList.toggle("bio-open");
+                        BACTcards[2].classList.toggle("bio-open");
+                    });
+
+            </script>
+         </div>
+    </div>
+
+    <div class="footer">
+        <div class="copyright">Copyright &copy; 2020 Bay Area COVID-Tutoring</div>
+        <div class="f-divider"></div>
+        <div class="socials">
+            <a href="mailto:bayareacovidtutoring@gmail.com"><i class="fab fa-google" id="gmail"></i></a>
+            <a href="https://www.instagram.com/bayareacovidtutoring/" id="insta"><i class="fab fa-instagram"></i></a>
+            <a href="facebook.com"><i class="fab fa-facebook-square" id="facebook"></i></a>
+        </div>
+    </div>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+    <script>
+        gsap.from('.lead-content-wrapper', {duration: 1, opacity: 0, scale: 0})
+
+    </script>
+    <script src="./../assets/Scripts/main.js"></script>
+</body>
+</html>

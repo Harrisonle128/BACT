@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "website": "bayarea-covid-tutoring",
+    "default": "bayarea-covid-tutoring"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}
